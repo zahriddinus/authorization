@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form_wrapper">
+      <div class="form_top">
+        <h1 class="form_title">Account settings</h1>
+        <button class="form_top_btn">
+          <img
+            src="./imgs/close-x-svgrepo-com.svg"
+            alt="A icon of close"
+            width="36"
+            height="36"
+          />
+        </button>
+      </div>
+      <form
+        class="form"
+        action="https://echo.htmlacademy.ru/"
+        method="post"
+        autocomplete="off"
+      >
+        <div class="form_inputs_wrapper">
+          <img
+            class="form_avatar"
+            src="./imgs/avatar.svg"
+            alt="A logo of user"
+            width="56"
+            height="56"
+          />
+
+          <div class="form_wrapper_every_input">
+            <label class="form_username_label" for="username">Username</label>
+            <input
+              class="form_username_input"
+              type="text"
+              id="username"
+              placeholder="Enter your username"
+              name="user_name"
+              required
+            />
+          </div>
+
+          <div class="form_wrapper_first_last">
+            <div class="form_wrapper_every_input">
+              <label class="form_username_label" for="userfirstname"
+                >First Name</label
+              >
+              <input
+                class="form_username_input"
+                type="text"
+                id="userfirstname"
+                placeholder="Enter your first name"
+                name="user_first_name"
+              />
+            </div>
+
+            <div class="form_wrapper_every_input">
+              <label class="form_username_label" for="userlastname"
+                >Last Name</label
+              >
+              <input
+                class="form_username_input"
+                type="text"
+                id="userlastname"
+                placeholder="Enter your last name"
+                name="user_last_name"
+              />
+            </div>
+          </div>
+
+          <div class="form_wrapper_every_input">
+            <label class="form_username_label" for="useremail">Email</label>
+            <input
+              class="form_username_input"
+              type="email"
+              id="useremail"
+              placeholder="Enter your email"
+              name="user_email"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="form_wrapper_every_input" style="margin-left: 0">
+            <label class="form_username_label" for="userbio">Bio</label>
+            <textarea
+              class="form_username_input form_wrapper_textarea"
+              name="user_bio"
+              id="userbio"
+              placeholder="Tell us about yourself"
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="form_bottom">
+          <button class="form_bottom_btn" type="submit">Cancel</button>
+          <button class="form_bottom_btn" type="submit">Save</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
